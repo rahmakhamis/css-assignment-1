@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Java script</title>
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+        document.queryselectorAll('dropdown').forEach(function(dropdown){
+            dropdown.onclick=function(){
+                document.querySelector('Hello').style.color=dropdown.dataset.color);
+            }
+        }
+    }
+</script>
+<body>
+    <hi id="hello">Hello</hi>
+    <dropdown data.color="blue">blue</dropdon>
+    <dropdown data.color="green">green</dropdown>
+    <dropdown data.color="black">black</dropdown>
+
+</body>
+</html>
